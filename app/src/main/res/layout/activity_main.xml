@@ -1,19 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_margin="20dp"
-        android:elevation="4dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/puppy"
-        android:contentDescription="@string/logo_pet_shop"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
 
-</LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/logo_pet_shop"
+            android:elevation="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/puppy" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/pet_shop_description"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"></View>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/address"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="35sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"></View>
+
+        <android.support.design.widget.FloatingActionButton
+           android:layout_gravity="end"
+            android:layout_margin="20dp"
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_menu_share" />
+
+
+    </LinearLayout>
+
+</ScrollView>
