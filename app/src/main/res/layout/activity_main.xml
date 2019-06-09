@@ -7,6 +7,13 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
- 
+    <ImageView
+        android:layout_margin="20dp"
+        android:elevation="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/puppy"
+        android:contentDescription="@string/logo_pet_shop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
 
 </LinearLayout>
